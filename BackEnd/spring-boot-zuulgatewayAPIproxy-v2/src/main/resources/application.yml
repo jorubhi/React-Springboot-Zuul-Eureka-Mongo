@@ -1,0 +1,39 @@
+
+info:
+  component: Zuul-API
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  routes:
+      trades:
+          path: /trades/**
+          url : http://localhost:8098/trades
+          
+      market:
+          path: /market/**
+          url : http://localhost:8899/market
+ribbon:
+  eureka:
+    enabled: false
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: false
+      
+server:
+  port: 9010
+
+logging:
+  level:
+    ROOT: INFO
+    com.mock: DEBUG

@@ -1,0 +1,29 @@
+server:
+  port: 3003
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+spring:
+  application:
+    name: notification-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: TradeDb
+management:
+  security:
+    enabled: false
+logging:
+  level:
+    com.myapp.spring: DEBUG
+    
+   

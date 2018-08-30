@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.Whole-app{
+  font-family:Tahoma, Geneva, Verdana, sans-serif;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.header{
+  font-family: Tahoma, Geneva, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+}
+.refreshbtn{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.date-search{
+  padding:10px;
+}
+.tradeList{
+  
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+.new-trade-header{position: absolute;
+  right: 20px;
+ 
+}
+
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
